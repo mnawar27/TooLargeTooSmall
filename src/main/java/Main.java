@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("Guess the number between 1 and 20");
 
-        playGuessingGame();
+        guessingGame();
 
         while (true) {
             System.out.println("Do you want to play again? Type y / n and hit enter");
@@ -22,8 +22,8 @@ public class Main {
             String playAgain = scan.next();
 
             if (playAgain.charAt(0) == 'y') {
-                System.out.println("picked a new number. Good luck!");
-                playGuessingGame();
+                System.out.println("picked a new number. Game begins");
+                guessingGame();
             } else {
                 System.out.println("Thanks for playing!");
                 break;
@@ -32,7 +32,7 @@ public class Main {
 
     }
 
-    public static void playGuessingGame() {
+    public static void guessingGame() {
         Scanner scan = new Scanner(System.in);
         Random rand = new Random();
 
